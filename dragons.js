@@ -20,18 +20,13 @@ app.directive("specs", function() {
     templateUrl: "specs.html"
   };
 });
-app.directive("New", function() {
-  return {
-    restrict: "E",
-    templateUrl: "specs.html"
-  };
-});
 
-app.directive("productTabs", function() {
+
+app.directive("dragonTabs", function() {
   return {
     restrict: "E",
 
-    templateUrl: "product-tabs.html",
+    templateUrl: "dragon-tabs.html",
     controller: function() {
       this.tab = 1;
 

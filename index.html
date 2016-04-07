@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="gemStore">
+<html ng-app="Dragonweb">
 
   <head>
     <meta charset="utf-8" />
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <script data-require="angular.js@1.2.x" src="http://code.angularjs.org/1.2.15/angular.js" data-semver="1.2.15"></script>
     <script src="app.js"></script>
-    <script src="products.js"></script>
+    <script src="dragons.js"></script>
   </head>
 
   <body ng-controller="StoreController as store">
@@ -29,12 +29,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-
-
-
-
-
-    <!--  Store Header  -->
+ <!--  Store Header  -->
     <header>
       <h1 class="text-center"><br>Dragonmania</br><br><font face="Comic Sans MS" size="300" >Know your dragons</font></br></h1>
      
@@ -43,26 +38,26 @@
     <!--  Products Container  -->
     <div class="list-group">
       <!--  Product Container  -->
-      <div class="list-group-item" ng-repeat="product in store.products | orderBy:'-price'">
+      <div class="list-group-item" ng-repeat="dragon in store.products | orderBy:'-price'">
 
         <!-- $index Practice:  -->
-        <h3>Dragon #{{$index + 1}}: {{product.name | uppercase}}<em class="pull-right"></em>
+        <h3>Dragon #{{$index + 1}}: {{dragon.name | uppercase}}<em class="pull-right"></em>
         </h3>
 
         <!-- Image Gallery  -->
-        <div ng-show="product.images.length" ng-controller="GalleryController as gallery">
+        <div ng-show="dragon.images.length" ng-controller="GalleryController as gallery">
           <div class="img-wrap">
-            <img ng-src="{{product.images[gallery.imageIndex]}}" class="img-thumbnail center-block" />
+            <img ng-src="{{dragon.images[gallery.imageIndex]}}" class="img-thumbnail center-block" />
           </div>
           <ul class="img-thumbnails clearfix">
-            <li class="small-image pull-left thumbnail" ng-repeat="image in product.images" ng-click="gallery.currentImageChange($index)">
+            <li class="small-image pull-left thumbnail" ng-repeat="image in dragon.images" ng-click="gallery.currentImageChange($index)">
               <img ng-src="{{image}}" />
             </li>
           </ul>
         </div>
 
         <!-- Product Tabs  -->
-        <product-tabs></product-tabs>
+        <dragon-tabs></dragon-tabs>
 
       </div>
     </div>

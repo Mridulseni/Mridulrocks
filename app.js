@@ -1,7 +1,7 @@
 // Code goes here
 
 (function() {
-  var app = angular.module('gemStore', ['store-directives']);
+  var app = angular.module('Dragonweb', ['store-directives']);
 
   app.controller('GalleryController', function() {
     this.imageIndex = 0;
@@ -12,7 +12,7 @@
   });
 
   app.controller('StoreController', function() {
-    this.products = gems;
+    this.products = Dragons;
   });
 
 
@@ -20,15 +20,15 @@
 
     this.review = {};
 
-    this.addReview = function(product){
+    this.addReview = function(dragon){
       this.review.createdOn = Date.now();
-      product.reviews.push(this.review);
+      dragon.reviews.push(this.review);
       this.review = {};
     };
 
   });
 
-  var gems = [{
+  var Dragons = [{
     name: 'toothless',
     description: "Once thought of as the unholy offspring of lightning and death itself,Toothless has proven to be much more of a giant, winged pussycat than the stuff of nightmares. Toothless is a Night Fury, one of the rarest and most intelligent of dragon species. He is presumed to be the last living Night Fury in the world, at least on Berk or the surrounding isles in the Archipelago. Playful, inqusitive and intelligent. As the last known specimen of the Night Fury species, Toothless is indisputably special. He commands respects from dragons and humans alike. Toothless also Possesses an echolocation sense not unlike radar or sonar. When flying through dark or cramped environments, Toothless issues a plasma blast in all directions. When the plasma bounces off the nearby terrain and returns to Toothless,it gives him an incredibly accurate of his surroundings.",
     price:1000,
@@ -41,9 +41,8 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/toothless.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/toothless.jpg"
+      
     ],
     reviews: [{
       stars: 5,
@@ -64,9 +63,7 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/baby_nadder.jpg",
-      "img/gem-03.gif",
-      "img/gem-04.gif",
+      "img/baby_nadder.jpg"
     ],
     reviews: [{
       stars: 3,
@@ -87,9 +84,7 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/baby_gronkle.jpg",
-      "img/gem-07.gif",
-      "img/gem-10.gif"
+      "img/baby_gronkle.jpg"
     ],
     reviews: [{
       stars: 1,
