@@ -1,7 +1,7 @@
 // Code goes here
 
 (function() {
-  var app = angular.module('Dragonweb', ['store-directives']);
+  var app = angular.module('Dragonweb', ['dragon-directives']);
 
   app.controller('GalleryController', function() {
     this.imageIndex = 0;
@@ -11,8 +11,8 @@
     };
   });
 
-  app.controller('StoreController', function() {
-    this.products = Dragons;
+  app.controller('DragonController', function() {
+    this.dragonMania = Dragons;
   });
 
 
@@ -48,7 +48,7 @@
       stars: 5,
       body: "Awesome dragon. My favourite.",
       author: "Mridul",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   }, {
     name: 'baby_nadder',
@@ -69,7 +69,7 @@
       stars: 3,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   }, {
     name: 'baby_gronckle',
@@ -90,7 +90,7 @@
       stars: 1,
       body: "This dragon is WAY too expensive for its rarity value.",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'armorwing',
@@ -105,15 +105,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/armorwing.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/armorwing.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
     name: 'baby_nightmares',
@@ -136,11 +134,11 @@
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'baby_zipplebacks',
-    description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
+    description: "Coming soon",
     Species : 8,
     Class : 110.50,
 	 price:1000,
@@ -159,11 +157,11 @@
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'changewind',
-    description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
+    description: "Coming soon",
     Species : 8,
     Class : 110.50,
 	 price:1000,
@@ -174,19 +172,17 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/changewind.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/changewind.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
     name: 'dragons_belchbarf',
-    description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
+    description: "Coming soon",
     Species : 8,
     Class : 110.50,
 	 price:1000,
@@ -197,19 +193,17 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/dragons_belchbarf.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/dragons_belchbarf.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
     name: 'white_bewilderbeast',
-    description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
+    description: "Coming soon",
     Species : 8,
     Class : 110.50,
     Attack : 7,
@@ -220,19 +214,17 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/white_bewilderbeast.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/white_bewilderbeast.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'cloudjumper',
-    description: "Some gems have hidden qualities beyond their luster, beyond their shine... Azurite is one of those gems.",
+    description: "Coming soon",
     Species : 8,
     Class : 110.50,
 	 price:1000,
@@ -243,15 +235,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/cloudjumper.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/cloudjumper.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Bing, Bam and Boom',
@@ -265,15 +255,13 @@
     Venom : 0,
     Jaw_strength: 7,
     images: [
-      "img/Bing_Bang_Boom.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Bing_Bang_Boom.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nicer",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Catastrophic Quaken',
@@ -287,15 +275,13 @@
     Venom : 0,
     Jaw_strength: 20,
     images: [
-      "img/Quaken.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Quaken.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nicer",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Death Song',
@@ -309,19 +295,17 @@
     Venom : 0,
     Jaw_strength: 10,
     images: [
-      "img/Death_Song.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Death_Song.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'fireworm',
-    description: "These dragons are often found in large groups. This makes them extremely dangerous. They are even remotely aggressive, occasionally clinging to potential enemies. Usually Fireworms make their homes in dark caverns. Fireworm Queens are very protective of their firecombs of gel and will chase down anything that tries to take it. As being a mother, the Queen has a devoted, discreet nature even on rage to take back her firecombs, and being highly intelligent as being capable of conjecturing the intruders' motives and objectives. Strangely enough, average fireworms are afraid of fire. As shown in Portrait of Hiccup as a Buff Young Man, when Toothless blasted at them, they started to back off. The Queen, however, is not. In the episode Race to Fireworm Island, when Stormfly blasted the Queen, she stood firm and kept fighting. All fireworms can heat up their skin to a temperature expressed to be hotter than the sun and being high enough that they can burn almost anything. While doing so they also generate a great amount of light, and sometimes, they even set themselves on fire. It is known that the closer two fireworms are to one another, the brighter they will shine. This ability is used as self defense and also can be used against other dragons. It has been shown to be very powerful especially when there is a pack of dragons using this ability. On top of that, they are able to stand on four legs and their tongue has a venom that has the special ability to reignite the worn out fire of Stoker Class Dragons, like Monstrous Nightmares. Fireworms can also produce some kind of gel that gives them their fire and they store in honeycomb-like containers. When Stoker Class dragons consume that, their fire is reignited. Fireworm Queen has shown to be clever as she was able to a take short cut to catch up the escaping Hiccup, Toothless, and Snotlout. Another way of showing off her intelligence is that she quickly understood that a bond between a dragon and their rider was strong enough to risk their lives for each other. ",
+    description: "These dragons are often found in large groups. This makes them extremely dangerous. They are even remotely aggressive, occasionally clinging to potential enemies. Usually Fireworms make their homes in dark caverns. Fireworm Queens are very protective of their firecombs of gel and will chase down anything that tries to take it. As being a mother, the Queen has a devoted, discreet nature even on rage to take back her firecombs, and being highly intelligent as being capable of conjecturing the intruders' motives and objectives. Strangely enough, average fireworms are afraid of fire. As shown in Portrait of Hiccup as a Buff Young Man, when Toothless blasted at them, they started to back off. The Queen, however, is not. In the episode Race to Fireworm Island, when Stormfly blasted the Queen, she stood firm and kept fighting. All fireworms can heat up their skin to a temperature expressed to be hotter than the sun and being high enough that they can burn almost anything. While doing so they also generate a great amount of light, and sometimes, they even set themselves on fire. It is known that the closer two fireworms are to one another, the brighter they will shine. This ability is used as self defense and also can be used against other dragons. It has been shown to be very powerful especially when there is a pack of dragons using this ability. On top of that, they are able to stand on four legs and their tongue has a venom that has the special ability to reignite the worn out fire of Stoker Class Dragons, like Monstrous Nightmares. Fireworms can also produce some kind of gel that gives them their fire and they dragon in honeycomb-like containers. When Stoker Class dragons consume that, their fire is reignited. Fireworm Queen has shown to be clever as she was able to a take short cut to catch up the escaping Hiccup, Toothless, and Snotlout. Another way of showing off her intelligence is that she quickly understood that a bond between a dragon and their rider was strong enough to risk their lives for each other. ",
     Species : 16,
     Class : 110.50,
     Attack : 16,
@@ -331,15 +315,13 @@
     Venom : 0.14,
     Jaw_strength: 3,
     images: [
-      "img/fireworm.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/fireworm.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'flightmare',
@@ -353,15 +335,13 @@
     Venom : 10,
     Jaw_strength: 4,
     images: [
-      "img/flightmare.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/flightmare.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'grump',
@@ -375,15 +355,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/grump.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/grump.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Hookfang',
@@ -397,15 +375,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Hookfang.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Hookfang.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Meatlug',
@@ -420,15 +396,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Meatlug.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Meatlug.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Night Terror',
@@ -443,15 +417,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Night_Terror.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Night_Terror.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Red_death',
@@ -466,15 +438,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Red_death.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Red_death.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Scauldron',
@@ -489,15 +459,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Scauldron.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Scauldron.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Screaming_death',
@@ -512,15 +480,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Screaming_death.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Screaming_death.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Seashocker',
@@ -535,15 +501,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Seashocker.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Seashocker.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Skrill',
@@ -558,15 +522,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Skrill.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Skrill.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Skullcrusher',
@@ -581,15 +543,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Skullcrusher.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Skullcrusher.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Smothering smokebreath',
@@ -604,15 +564,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Smothering_smokebreath.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Smothering_smokebreath.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Snaptrapper',
@@ -627,15 +585,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Snaptrapper.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Snaptrapper.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Snow_wraith',
@@ -650,15 +606,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Snow_wraith.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Snow_wraith.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Speedstinger',
@@ -674,15 +628,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Speedstinger.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Speedstinger.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Stormfly',
@@ -697,15 +649,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Stormfly.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Stormfly.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'terrible-terror',
@@ -720,15 +670,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/terrible-terror.PNG",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/terrible-terror.PNG"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Timberjack',
@@ -743,15 +691,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Timberjack.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Timberjack.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Typhoonerang',
@@ -766,15 +712,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Typhoonerang.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Typhoonerang.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Whispering_death',
@@ -789,15 +733,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Whispering_death.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Whispering_death.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'Windshear',
@@ -812,15 +754,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/Windshear.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/Windshear.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   },{
    name: 'cloudjumper',
@@ -835,15 +775,13 @@
     Venom : '#CCC',
     Jaw_strength: 14,
     images: [
-      "img/cloudjumper.jpg",
-      "img/gem-05.gif",
-      "img/gem-09.gif"
+      "img/cloudjumper.jpg"
     ],
     reviews: [{
       stars: 5,
       body: "Nice ",
       author: "Nice er",
-      createdOn: 1397490980837
+      createdOn: 2364236468234
     }]
   }];
 

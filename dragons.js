@@ -1,4 +1,4 @@
-var app = angular.module('store-directives', []);
+var app = angular.module('dragon-directives', []);
 
 app.directive("descriptions", function() {
   return {
@@ -14,10 +14,10 @@ app.directive("reviews", function() {
   };
 });
 
-app.directive("specs", function() {
+app.directive("specifications", function() {
   return {
     restrict: "E",
-    templateUrl: "specs.html"
+    templateUrl: "specifications.html"
   };
 });
 

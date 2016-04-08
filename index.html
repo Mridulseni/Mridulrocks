@@ -14,37 +14,36 @@
     <script src="dragons.js"></script>
   </head>
 
-  <body ng-controller="StoreController as store">
+  <body ng-controller="DragonController as store">
   	
 	<div class="fb-like" data-href="https://www.facebook.com/HowToTrainYourDragon" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 
 
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+     <script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+     fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
 
- <!--  Store Header  -->
+
     <header>
-      <h1 class="text-center"><br>Dragonmania</br><br><font face="Comic Sans MS" size="300" >Know your dragons</font></br></h1>
-     
+      <h1 class="text-center"><br>Dragonmania</br><br><font face="Comic Sans MS" size="300" ><marquee behavior="scroll" direction="left">Know your dragons </marquee></font></br></h1>
     </header>
 
-    <!--  Products Container  -->
+    
     <div class="list-group">
-      <!--  Product Container  -->
-      <div class="list-group-item" ng-repeat="dragon in store.products | orderBy:'-price'">
+     
+      <div class="list-group-item" ng-repeat="dragon in store.dragonMania ">
 
-        <!-- $index Practice:  -->
+       
         <h3>Dragon #{{$index + 1}}: {{dragon.name | uppercase}}<em class="pull-right"></em>
         </h3>
 
-        <!-- Image Gallery  -->
+        
         <div ng-show="dragon.images.length" ng-controller="GalleryController as gallery">
           <div class="img-wrap">
             <img ng-src="{{dragon.images[gallery.imageIndex]}}" class="img-thumbnail center-block" />
@@ -56,7 +55,7 @@
           </ul>
         </div>
 
-        <!-- Product Tabs  -->
+       
         <dragon-tabs></dragon-tabs>
 
       </div>

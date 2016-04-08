@@ -3,17 +3,17 @@ body{
   max-width: 1500px;
   background-color:#87CEFA;
   margin: 0 auto;
-  background: #ffffff url("http://www.cs.odu.edu/~msen/app/img/Blue.jpg") repeat right top;
+  background: #ffffff url("http://www.cs.odu.edu/~msen/app/img/stars.gif") repeat right top;
   opacity:1.3;
-  background-repeat: repeat;
+
 
 }
 
 a {
   
-  color: #ac005f;
+  color: #660099;
   border: 2px solid black ;
-  background-color:#FF9966;
+  background-color:#CC66CC;
   
 }
 a:hover,
@@ -117,7 +117,7 @@ ul.img-thumbnails {
 .nav-pills > li > a:hover,
 .nav-pills > li > a:focus{
   
-  color: #ac005f;
+  color: #660099;
   border: 2px solid black ;
   background-color:#87CEEB;
   
@@ -127,7 +127,7 @@ ul.img-thumbnails {
 .btn-primary,
 .btn-primary:focus {
   
-  background: #87CEEB;
+  background: #990066;
   border: 0;
   
 }
@@ -135,7 +135,7 @@ ul.img-thumbnails {
 .nav-pills > li.active > a:hover,
 .btn-primary:hover {
  
-  background: #ac005f;
+  background: #660099;
   
 }
 h3{
@@ -164,7 +164,7 @@ li.strong{
 div.list-group-item{
 	
 	border-radius: 60px 60px 60px 60px;
-	border: 10px solid Turquoise ;
+
     opacity:.86;
 	
 }
@@ -211,10 +211,10 @@ h4{
 h1.text-center{
 	
 	font-size:70px;
-	color:#2E9BF5;
-    background-color: #B0E0E6;
+	color:#6633FF;
+    background-color: #66CCFF;
 	border-radius: 10px 10px 10px 10px;
-	background: #75C1DD url("http://www.cs.odu.edu/~msen/app/img/random_dragon.gif") no-repeat right top 90px;
+	background: #66CCFF url("http://www.cs.odu.edu/~msen/app/img/random_dragon.gif") no-repeat right top 90px;
 	background-height:200%;
 	padding:30px;
 	opacity:.8;
